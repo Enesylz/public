@@ -199,39 +199,39 @@
     </div>
 
     <script>
-        let music = document.getElementById("music");
+    let music = document.getElementById("music");
 
-        function next(num) {
-            music.play().catch(() => { });
-            document.getElementById("screen" + num).style.display = "none";
-            document.getElementById("screen" + (num + 1)).style.display = "block";
+    function next(num) {
+        music.play().catch(() => { });
+        document.getElementById("screen" + num).style.display = "none";
+        document.getElementById("screen" + (num + 1)).style.display = "block";
+    }
+
+    /* 🌸 Sadece butona basıldığında sürpriz ekle */
+    function addSurprise() {
+        const emojis = ["❤️", "✨", "💖", "💫", "🌸", "🎶"];
+        const messages = ["💖 Seni düşünüyorum", "✨ Seninle olmak güzel", "💗 Birlikte güzeliz"];
+
+        // Sürprizleri oluştur
+        for (let i = 0; i < 10; i++) {
+            let s = document.createElement("div");
+            s.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+            s.className = "surprise";
+            s.style.left = Math.random() * 90 + "%";
+            s.style.top = Math.random() * 80 + "%";
+            s.style.fontSize = (15 + Math.random() * 25) + "px";
+            s.style.color = `hsl(${Math.random() * 360}, 70%, 70%)`;
+            document.body.appendChild(s);
         }
 
-        /* 🌸 Sadece butona basıldığında sürpriz ekle */
-        function addSurprise() {
-            const emojis = ["❤️", "✨", "💖", "💫", "🌸", "🎶"];
-            const messages = ["💖 Seni düşünüyorum", "✨ Seninle olmak güzel", "💗 Birlikte güzeliz"];
-
-            // Sürprizleri oluştur
-            for (let i = 0; i < 10; i++) {
-                let s = document.createElement("div");
-                s.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-                s.className = "surprise";
-                s.style.left = Math.random() * 90 + "%";
-                s.style.top = Math.random() * 80 + "%";
-                s.style.fontSize = (15 + Math.random() * 25) + "px";
-                s.style.color = hsl(${Math.random() * 360},70%,70%);
-                document.body.appendChild(s);
-            }
-
-            // Mesaj ekle
-            let m = document.createElement("div");
-            m.innerText = messages[Math.floor(Math.random() * messages.length)];
-            m.className = "message";
-            m.style.top = 400 + Math.random() * 100 + "px";
-            document.body.appendChild(m);
-        }
-    </script>
+        // Mesaj ekle
+        let m = document.createElement("div");
+        m.innerText = messages[Math.floor(Math.random() * messages.length)];
+        m.className = "message";
+        m.style.top = 400 + Math.random() * 100 + "px";
+        document.body.appendChild(m);
+    }
+</script>
 
 </body>
 
