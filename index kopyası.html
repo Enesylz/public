@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sana Bir Sürpriz 🌸</title>
     <style>
-        html,
-        body {
+        html, body {
             height: 100%;
             overflow: hidden;
             margin: 0;
@@ -27,19 +25,12 @@
             background: white;
             border-radius: 20px;
             padding: 25px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+            box-shadow: 0 0 15px rgba(0,0,0,0.08);
             animation: fadeIn 1s ease;
         }
 
-        h1 {
-            font-size: 1.8rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-            line-height: 1.4;
-            transition: all 1s ease;
-        }
+        h1 { font-size: 1.8rem; }
+        p { font-size: 1.1rem; line-height: 1.4; transition: all 1s ease; }
 
         button {
             background: #ffbcd4;
@@ -51,20 +42,11 @@
             cursor: pointer;
             transition: 0.3s;
         }
-
-        button:hover {
-            background: #ff9bbd;
-        }
+        button:hover { background: #ff9bbd; }
 
         @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-
-            100% {
-                opacity: 1;
-            }
+            0% { opacity: 0; transform: translateY(10px); }
+            100% { opacity: 1; }
         }
 
         /* 💖 Sürprizler */
@@ -76,15 +58,8 @@
         }
 
         @keyframes floatUp {
-            0% {
-                transform: translateY(100vh) scale(0.5) rotate(0deg);
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateY(-20vh) scale(1) rotate(360deg);
-                opacity: 0.8;
-            }
+            0% { transform: translateY(100vh) scale(0.5) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-20vh) scale(1) rotate(360deg); opacity: 0.8; }
         }
 
         /* ✨ Mesaj animasyonu */
@@ -100,25 +75,13 @@
         }
 
         @keyframes riseColor {
-            0% {
-                transform: translateX(-50%) translateY(0);
-                opacity: 0;
-            }
-
-            30% {
-                opacity: 1;
-            }
-
-            100% {
-                transform: translateX(-50%) translateY(-150px);
-                opacity: 0;
-            }
+            0% { transform: translateX(-50%) translateY(0); opacity: 0; }
+            30% { opacity: 1; }
+            100% { transform: translateX(-50%) translateY(-150px); opacity: 0; }
         }
 
         @media(max-width:600px) {
-            h1 {
-                font-size: 1.4rem;
-            }
+            h1 { font-size: 1.4rem; }
         }
     </style>
 </head>
@@ -131,41 +94,34 @@
 
     <div class="container" id="screen1">
         <h1>🌼 Merhabaaaa</h1>
-        <p>Sana özel bir site yapmak istedim.Çok vaktim yok yoksa daha iyisini yapabilirdim ama elimden gelen buydu. Çok
-            becerebildiğim şeyler değil böyle konuşmalar yapmak. Bu sebepten böyle bir şey yapmak istedim. Dilerim
-            beğenirsin.
-            Hayat bazen öyle yollar çiziyor ki, insanın karşısına çıkacak kişi en beklemediği anda ve en beklemediği
-            şekilde çıkıyor. Biz ortaokulda tanıştık; o zamanlar sadece arkadaş olduğumuzu sanıyordum. Ama zamanla fark
-            ettim ki, sen benim için her zaman özel bir yere sahiptin.
-        </p>
+        <p>Sana özel bir site yapmak istedim... Beğenirsin umarım 🌸</p>
         <button onclick="next(1)">Devam et</button>
     </div>
 
     <div class="container" id="screen2" style="display:none;">
         <h1>🌸</h1>
-        <p>Bazen kelimeler yetmiyor,<br> Yıllar sonra tekrar konuşmaya başladığımızda, sanki eksik bir parçayı yerine
-            koymuş gibi hissettim. Seninle konuşmak, seninle gülmek, seninle paylaşmak… hepsi bana hayatın ne kadar
-            güzel olabileceğini gösteriyor.</p>
+        <p>Seninle konuşmak benim için çok değerli...</p>
         <button onclick="next(2)">Biraz daha 💗</button>
     </div>
+
     <div class="container" id="screen3" style="display:none;">
         <h1>🌸</h1>
-        <p>Söyleyemediğim bir şeyi<br> burada bırakmak istedim...<br>Ben sadece bir anı değil, bir ömür paylaşmak
-            istiyorum seninle. Yanımda sen olunca, hayatın tüm renkleri daha parlak, tüm sesleri daha güzel.</p>
+        <p>Birlikte her şey daha güzel olabilir...</p>
         <button onclick="next(3)">Biraz daha 💗</button>
     </div>
+
     <div class="container" id="screen4" style="display:none;">
         <h1>💗</h1>
-        <p> Her sabahı
-            seninle karşılamak, her mutluluğu ve her zorluğu birlikte yaşamak… işte hayalim bu. Eğer sen de benimle aynı
-            şekilde hissetmeyi istersen, gel hayatımızı birlikte yazalım.</p>
+        <p>Hayat, seninle daha anlamlı...</p>
         <button onclick="next(4)">Sürpriz Göster 💖</button>
     </div>
+
     <div class="container" id="screen5" style="display:none;">
         <h1>💗</h1>
-        <p> Son olarak bir Akrostiş sözüm vardı. Sözümü tutmuş olayımmm</p>
+        <p>Bir şey daha söylemek istiyorum...</p>
         <button onclick="next(5)">Sürpriz Göster 💖</button>
     </div>
+
     <div class="container" id="screen6" style="display:none;">
         <h1>💗</h1>
         <p>
@@ -177,62 +133,67 @@
         </p>
         <button onclick="next(6)">Sürpriz Göster 💖</button>
     </div>
+
     <div class="container" id="screen7" style="display:none;">
         <h1>💗</h1>
-       <img src="Gemini_Generated_Image_8nu5dr8nu5dr8nu5.png" alt="site resmi" width="400">
+        <img src="Gemini_Generated_Image_8nu5dr8nu5dr8nu5.png" width="400">
         <button onclick="next(7)">Sürpriz Göster 💖</button>
     </div>
-     <div class="container" id="screen8" style="display:none;">
+
+    <div class="container" id="screen8" style="display:none;">
         <h1>💗</h1>
-       <img src="Gemini_Generated_Image_9a81h19a81h19a81.png" alt="site resmi" width="400">
+        <img src="Gemini_Generated_Image_9a81h19a81h19a81.png" width="400">
         <button onclick="next(8)">Sürpriz Göster 💖</button>
     </div>
-     <div class="container" id="screen9" style="display:none;">
+
+    <div class="container" id="screen9" style="display:none;">
         <h1>💗</h1>
-       <img src="Gemini_Generated_Image_12wi9j12wi9j12wi.png" alt="site resmi" width="400">
+        <img src="Gemini_Generated_Image_12wi9j12wi9j12wi.png" width="400">
         <button onclick="next(9)">Sürpriz Göster 💖</button>
     </div>
-     <div class="container" id="screen10" style="display:none;">
+
+    <div class="container" id="screen10" style="display:none;">
         <h1>💗</h1>
-       <img src="Gemini_Generated_Image_s9abfas9abfas9ab.png" alt="site resmi" width="400">
+        <img src="Gemini_Generated_Image_s9abfas9abfas9ab.png" width="400">
         <button onclick="addSurprise()">Sürpriz Göster 💖</button>
     </div>
 
-    <script>
-        let music = document.getElementById("music");
+<script>
+let music = document.getElementById("music");
 
-        function next(num) {
-            music.play().catch(() => { });
-            document.getElementById("screen" + num).style.display = "none";
-            document.getElementById("screen" + (num + 1)).style.display = "block";
-        }
+function next(num) {
+    // 🎶 sadece 6. ekranda müziği başlat
+    if (num === 6) {
+        music.play().catch(()=>{});
+    }
 
-        /* 🌸 Sadece butona basıldığında sürpriz ekle */
-        function addSurprise() {
-            const emojis = ["❤️", "✨", "💖", "💫", "🌸", "🎶"];
-            const messages = ["💖 Seni düşünüyorum", "✨ Seninle olmak güzel", "💗 Birlikte güzeliz"];
+    document.getElementById("screen" + num).style.display = "none";
+    document.getElementById("screen" + (num+1)).style.display = "block";
+}
 
-            // Sürprizleri oluştur
-            for (let i = 0; i < 10; i++) {
-                let s = document.createElement("div");
-                s.innerText = emojis[Math.floor(Math.random() * emojis.length)];
-                s.className = "surprise";
-                s.style.left = Math.random() * 90 + "%";
-                s.style.top = Math.random() * 80 + "%";
-                s.style.fontSize = (15 + Math.random() * 25) + "px";
-                s.style.color = `hsl(${Math.random() * 360},70%,70%)`;
-                document.body.appendChild(s);
-            }
+/* 💖 Sadece butona basıldığında sürpriz ekle */
+function addSurprise() {
+    const emojis = ["❤️","✨","💖","💫","🌸","🎶"];
+    const messages = ["💖 Seni düşünüyorum","✨ Seninle olmak güzel","💗 Birlikte güzeliz"];
 
-            // Mesaj ekle
-            let m = document.createElement("div");
-            m.innerText = messages[Math.floor(Math.random() * messages.length)];
-            m.className = "message";
-            m.style.top = 400 + Math.random() * 100 + "px";
-            document.body.appendChild(m);
-        }
-    </script>
+    for (let i = 0; i < 10; i++) {
+        let s = document.createElement("div");
+        s.innerText = emojis[Math.floor(Math.random() * emojis.length)];
+        s.className = "surprise";
+        s.style.left = Math.random() * 90 + "%";
+        s.style.top = Math.random() * 80 + "%";
+        s.style.fontSize = (15 + Math.random()*25) + "px";
+        s.style.color = `hsl(${Math.random()*360},70%,70%)`;
+        document.body.appendChild(s);
+    }
+
+    let m = document.createElement("div");
+    m.innerText = messages[Math.floor(Math.random()*messages.length)];
+    m.className = "message";
+    m.style.top = 400 + Math.random()*100 + "px";
+    document.body.appendChild(m);
+}
+</script>
 
 </body>
-
 </html>
